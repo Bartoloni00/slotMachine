@@ -1,0 +1,88 @@
+:root{
+    --icon_width:150px;
+    --icon_height:150px;
+    --num_icons: 9;
+}
+
+body{
+    height: 99vh;
+}
+body{
+    /* background: rgb(117,174,220);
+    background: linear-gradient(180deg, rgb(99, 148, 187) 0%, rgba(255, 255, 255, 0.521) 50%, rgb(99, 148, 187) 100%); */
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+main{
+    background: #75AEDC77;
+    border: 1px solid #75AEDC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vh 5vw;
+    border-radius: 25px;
+}
+#controls{
+    height: calc(3 * var(--icon_height));
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#controls>article{
+    width: var(--icon_width);
+    height: calc(3 / var(--icon_height));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#controls>article>span{
+    background-color: #d4bc33;
+    width: 50px;
+    text-align: center;
+}
+#controls>article>button{
+    height: 30px;
+    width: 30px;
+}
+.Button {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bolder;
+    height: var(--icon_height);
+    width: var(--icon_width);
+    border-radius: 100%;
+    border: 2px solid #7B7C47;
+    background-color: #d4bc33;
+    cursor: pointer;
+    transition: all .3s;
+}
+.Button:hover{
+    background-color: #CC7722;
+    border-color: #b82eb8;
+}
+.Button:active, .Button:disabled{
+    background-color: #0000;
+}
+
+.slots{
+    width: calc(3.5 * var(--icon_width));
+    height: calc(3 * var(--icon_height));
+    padding: calc(0.1 * var(--icon_width));
+    display: flex;
+    justify-content: space-between;
+}
+
+.reel{
+    border: 1px solid black;
+    width: var(--icon_width);
+    height: calc(3 * var(--icon_height));
+    background-image: url(slotreeArgentinal.jpg);
+    background-repeat: repeat-y;
+    background-position: 0 0;
+}

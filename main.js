@@ -1,6 +1,12 @@
-const icon_width = 150,
-      icon_height = 150,
-      num_icons = 9,
+let icon_width = 150,
+    icon_height = 150
+
+// console.log(window.screen.width);
+if (window.screen.width <= 500) {
+  icon_width = 79,
+  icon_height = 79
+}
+const num_icons = 9,
       time_per_icon = 100,
       indexes = [0,0,0],
       iconMap = ["sanMartin", "messi", "tango", "obelisco", "empanada", "bandoneon", "caballo", "gaucho", "mate"];

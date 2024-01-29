@@ -5,7 +5,7 @@
 }
 
 body{
-    height: 99vh;
+    min-height: 100vh;
 }
 body{
     /* background: rgb(117,174,220);
@@ -21,6 +21,7 @@ body{
 main{
     background: #75AEDC77;
     border: 1px solid #75AEDC;
+    backdrop-filter: blur(2px);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,7 +83,32 @@ main{
     border: 1px solid black;
     width: var(--icon_width);
     height: calc(3 * var(--icon_height));
-    background-image: url(slotreeArgentinal.jpg);
+    background-image: url(slotreeArgentinal.webp);
     background-repeat: repeat-y;
     background-position: 0 0;
+}
+@media only screen and (max-width: 768px){
+    main{
+        flex-wrap: wrap;
+    }
+    #controls{
+        height: 100%;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .slots{
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 500px){
+    :root{
+        --icon_width:79px;
+        --icon_height:79px;
+        --num_icons: 9;
+    }
+    .reel{
+        background-image: url(slotreeArgentinal_mobile.webp);
+    }
 }
